@@ -1,0 +1,249 @@
+:root {
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-principal: #340bc7;
+    --color-rojo: #ff0331;
+    --color-input: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    background-image: url("../images/fondo/fondo_registro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    color: var(--color-rojo);
+    margin: auto 30px;
+}
+
+.contenido_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 30%;
+    padding: 10px;
+    border: 2px solid var(--color-negro);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.col {
+    text-align: center;
+}
+
+.logo {
+    max-width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+.nombre_proyecto {
+    color: var(--color-blanco);
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+}
+
+.form-control {
+    background-color: var(--color-input);
+    border: none;
+    width: 90%;
+    margin: 10px auto;
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+.form-control::placeholder {
+    color: var(--color-blanco);
+    font-weight: bold;
+}
+
+.form-control:focus {
+    background-color: var(--color-input);
+    color: var(--color-blanco);
+}
+
+.form-control:valid {
+    background-color: var(--color-input);
+}
+
+.boton_registrar {
+    background-color: var(--color-principal);
+    margin: 5px 20px;
+    border-radius: 7px;
+    color: var(--color-blanco);
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    display: inline-block;
+    width: 90%;
+}
+
+.boton_cancelar {
+    text-decoration: none;
+    color: var(--color-blanco);
+    display: inline-block;
+}
+
+.boton_salir {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    margin: 5px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+    display: inline-block;
+    width: 90%;
+}
+
+i {
+    margin: auto 20px;
+}
+
+select {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 40px;
+    display: inline-block;
+    width: 60%;
+    margin: 5px auto;
+}
+
+label {
+    color: var(--color-blanco);
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 17px;
+    display: inline-block;
+    width: 30%;
+    margin: 5px auto;
+}
+
+@media (max-width: 576px) {
+    body {
+        background-image: url("../images/fondo/fondo_registro.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 80%;
+        padding: 10px;
+        border: 1px solid var(--color-negro);
+        border-radius: 10px;
+        height: 88vh;
+    }
+
+    .logo {
+        max-width: 50%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 896px) {
+    body {
+        background-image: url("../images/fondo/fondo_registro.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 20px;
+        border: 2px solid var(--color-negro);
+        border-radius: 20px;
+        width: 50vh;
+        height: 80vh;
+    }
+
+    .logo {
+        max-width: 50%;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+    body {
+        background-image: url("../images/fondo/fondo_registro.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 20px;
+        border: 2px solid var(--color-negro);
+        border-radius: 20px;
+        width: 50vh;
+        height: 80vh;
+    }
+
+    .logo {
+        max-width: 40%;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768.9px) {
+    body {
+        background-image: url("../images/fondo/fondo_registro.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 20px;
+        border: 2px solid var(--color-negro);
+        border-radius: 20px;
+        width: 50vh;
+        height: 85vh;
+    }
+
+    .logo {
+        max-width: 40%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    body {
+        background-image: url("../images/fondo/fondo_registro.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 20px;
+        border: 2px solid var(--color-negro);
+        border-radius: 20px;
+        width: 50vh;
+        height: 85vh;
+    }
+
+    .logo {
+        max-width: 40%;
+        height: auto;
+        margin: auto;
+    }
+}

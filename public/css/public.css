@@ -1,0 +1,120 @@
+:root {
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-principal: #2D3E50;
+    --color-principal-hover: #34495E;
+    --color-secundario: #95A5A5;
+    --color-secundario-hover: #BEC3C7;
+    --color-success: #037672;
+    --color-table-linea: #f5f8fc;
+    --color-button1: #2D3E50;
+    --color-button2: #666a74;
+    --color-button1_hover: #212f3e;
+    --color-button2_hover: #404754;
+}
+
+.button_1{
+    background-color: var(--color-button1);
+    color: var(--color-blanco);
+}
+.button_2{
+    background-color: var(--color-button2);
+    color: var(--color-blanco);
+}
+
+.button_1:hover{
+    background-color: var(--color-button1_hover);
+    color: var(--color-blanco);
+}
+.button_2:hover{
+    background-color: var(--color-button2_hover);
+    color: var(--color-blanco);
+}
+
+.pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-principal);
+    padding: 10px;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.company-nombre h4 {
+    margin: 0;
+    font-size: 15px;
+    color: var(--color-blanco);
+}
+
+.company-nombre p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--color-blanco);
+}
+.login-button {
+    display: contents;
+}
+
+
+.btn-public {
+    background: var(--color-secundario-hover);
+    color: var(--color-negro);
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-public:hover {
+    background: var(--color-secundario-hover);
+}
+
+
+/* Estilos para la previsualización del PDF en el modal */
+.pdf-preview-desktop {
+    display: block;
+}
+
+.pdf-preview-mobile {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.pdf-modal-icon {
+    width: 120px;
+    height: auto;
+    margin: 20px auto;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .pdf-preview-desktop {
+        display: none;
+    }
+
+    .pdf-preview-mobile {
+        display: block;
+    }
+}
